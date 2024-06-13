@@ -2,27 +2,42 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Buku;
 use Illuminate\Http\Request;
-use App\Models\Book; // Assuming your book model
-use App\Models\Rental; // Assuming your rental model
+use App\Models\Buku;
+use App\Models\Transaksi;
+use Illuminate\Support\Facades\Auth;
 
 class RentalController extends Controller
 {
-    public function showConfirmation(Buku $buku) // Adjust parameter type if needed
+    public function showConfirmation($id)
     {
+        // Retrieve the book details by ID
+        $buku = Buku::findOrFail($id);
+
+        // Return the view with the book data
         return view('confirm-rental', compact('buku'));
     }
 
     public function store(Request $request)
     {
-        $rental = new Rental;
-        $rental->user_id = Auth::id(); // Assuming you have user authentication
-        $rental->book_id = $request->book_id;
-        $rental->rental_date = now(); // Assuming you want to capture rental date
-        $rental->save();
+        // Validate the request data
+        $request->validate([
+            'buku_id' => 'required|exists:bukus,id',
+            'judul_buku' => 'required|string|max:255',
+            'gambar_buku' => 'required|string|max:255',
+            'name_user' => 'required|string|max:255',
+        ]);
 
-        // Handle successful rental (flash message, redirect, etc.)
-        return redirect()->route('catalog.index')->with('success', 'Book rented successfully!');
+        // Create a new Transaksi record
+        $transaksi = new Transaksi;
+        $transaksi->id_transaksi = uniqid(); // Generate a unique transaction ID
+        $transaksi->buku_id = $request->input('book_id'); // Include the buku_id
+        $transaksi->name = $request->input('name_user');
+        $transaksi->judul_buku = $request->input('judul_buku');
+        $transaksi->gambar_buku = $request->input('gambar_buku');
+        $transaksi->save();
+
+        // Redirect back to the catalog with a success message
+        return redirect()->route('catalog.index')->with('success', 'Book rental confirmed!');
     }
 }

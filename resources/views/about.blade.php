@@ -13,7 +13,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1001 Library</title>
+    <title>Bukuku Pintar</title>
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     @vite('resources/sass/app.scss')
     @livewireStyles
@@ -34,7 +34,7 @@
                     <div class="text-center my-5">
                         <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">About Us</span></h2>
                         <h4>One Thousan One Library adalah sebuah website untuk memfasilitasi antara user dan pihak perpustakaan agar lebih mudah dalam melakukan proses peminjaman dan pengembalian buku.</h4>
-                        <h3 class="display-5 fw-bolder mt-5"><span class="text-gradient d-inline">1001 Library</span></h3>
+                        <h3 class="display-5 fw-bolder mt-5"><span class="text-gradient d-inline">Bukuku Pintar</span></h3>
                         <h4>Memberikan akses mudah dan luas kepada ribuan buku berkualitas untuk semua kalangan, dari berbagai genre dan bidang pengetahuan.
                             Menyediakan layanan penyewaan yang ramah pengguna dan efisien dengan pilihan penyewaan jangka pendek maupun jangka panjang.
                             Menghadirkan pengalaman yang menyenangkan dan interaktif bagi pengguna melalui platform daring dan fisik, dengan perpustakaan yang nyaman dan menarik secara visual.

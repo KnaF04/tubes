@@ -10,7 +10,7 @@
                     <!-- Header text content-->
                     <div class="text-center text-xxl-start">
 
-                        <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline" style="color: #884A39">1001 &nbsp &nbsp LIBRARY </span></h1>
+                        <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline" style="color: #884A39">BUKUKU &nbsp &nbsp PINTAR </span></h1>
                         <div class="fs-3 fw-light text-muted" style="color: #884A39">“Tanpa pengetahuan, tindakan tidak berguna dan pengetahuan tanpa tindakan adalah sia-sia."
                             - Abu Bakar</div>
                             <span>&nbsp &nbsp</span>
@@ -20,7 +20,7 @@
                     <!-- Header profile picture-->
                     <div class="d-flex justify-content-center mt-5 mt-xxl-0">
                         <div class="profile bg-gradient-primary-to-secondary">
-                            <img class="profile-img" style="margin-left: 340px" src="{{ Vite::asset('resources/images/logonjay.png') }}" alt="..." />
+                            <img class="profile-img" style="margin-left: 340px" src="{{ Vite::asset('resources/images/logobukuku.png') }}" alt="..." />
 
                         </div>
                     </div>
