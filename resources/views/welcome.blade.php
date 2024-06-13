@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1001 Library</title>
+    <title>Bukuku Pintar</title>
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     @vite('resources/sass/app.scss')
 </head>
@@ -14,7 +14,7 @@
 <main class="flex-shrink-0">
     <nav class="navbar navbar-expand-lg py-3" style="background-color: #FFC26F ">
         <div class="container px-5" >
-            <a class="navbar-brand" href="/"><span class="fw-bolder">1001 LIBRARY</span></a>
+            <a class="navbar-brand" href="/"><span class="fw-bolder">Bukuku Pintar</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder" style="color:#884A39">
@@ -33,7 +33,7 @@
                     <!-- Header text content-->
                     <div class="text-center text-xxl-start">
                         <div class="badge bg-gradient-primary-to-secondary text-white mb-4"><div class="text-uppercase">Design &middot; Development &middot; Marketing</div></div>
-                        <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline" style="color: #884A39">1001 &nbsp &nbsp LIBRARY </span></h1>
+                        <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline" style="color: #884A39">BUKUKU &nbsp &nbsp PINTAR </span></h1>
                         <div class="fs-3 fw-light text-muted" style="color: #884A39">“Tanpa pengetahuan, tindakan tidak berguna dan pengetahuan tanpa tindakan adalah sia-sia."
                             - Abu Bakar</div>
                             <span>&nbsp &nbsp</span>
@@ -49,7 +49,7 @@
                     <!-- Header profile picture-->
                     <div class="d-flex justify-content-center mt-5 mt-xxl-0">
                         <div class="profile bg-gradient-primary-to-secondarygi">
-                            <img class="profile-img" style="margin-left: 340px" src="{{ Vite::asset('resources/images/logorb2.png') }}" alt="..." />
+                            <img class="profile-img" style="margin-left: 340px" src="{{ Vite::asset('resources/images/logobukuku.png') }}" alt="..." />
 
                         </div>
                     </div>
